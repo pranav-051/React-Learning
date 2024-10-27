@@ -24,14 +24,24 @@ const HOOK_useState = () => {
   return (
     <>
       <h1> 1. Hook: useState</h1>
-      <h2>Counter value: {counter}</h2>
-      <button onClick={addValue}>Add Value</button>
       <br />
       <br />
-      <button onClick={subValue}>Subtract value</button>
+      <h2 className='font-thin forced-color-adjust-auto'>Counter value:  {counter}</h2>
       <br />
       <br />
-      <button onClick={makeZero}>RESET</button>
+      <button onClick={addValue} className="bg-green-500">
+        Add Value
+      </button>
+      <br />
+      <br />
+      <button onClick={subValue} className="bg-green-500">
+        Subtract value
+      </button>
+      <br />
+      <br />
+      <button onClick={makeZero} className="bg-red-500">
+        RESET
+      </button>
     </>
   );
 };
